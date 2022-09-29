@@ -1,0 +1,49 @@
+[
+    {
+        "id": "1",
+        "activityName": "Yoga",
+        "timeRequired": 20,
+        "addToList": "Add to list",
+        "img": "https://i.ibb.co/chZmF6q/Benefits-yoga-fb-033522c365db4264a8c6fa5743c62c52.jpg"
+      },
+    {
+        "id": "2",
+        "activityName": "Weight Lifting",
+       
+        "timeRequired": 10,
+        "addToList": "Add to list",
+        "img": "https://i.ibb.co/YWZhbMN/Greyshortssquat1000.jpg"
+      },
+    {
+        "id": "3",
+        "activityName": "Battle Rope",
+       
+        "timeRequired": 5,
+        "addToList": "Add to list",
+        "img": "https://i.ibb.co/kQm8Nx9/Battle-rope.jpg"
+      },
+    {
+        "id": "4",
+        "activityName": "Push Ups",
+       
+        "timeRequired": 10,
+        "addToList": "Add to list",
+        "img": "https://i.ibb.co/GJVhkPK/Push-ups.jpg"
+      },
+    {
+        "id": "5",
+        "activityName": "Running",
+       
+        "timeRequired": 30,
+        "addToList": "Add to list",
+        "img": "https://i.ibb.co/ky3sbt9/Running.jpg"
+      },
+    {
+        "id": "6",
+        "activityName": "Leg Pressing",
+       
+        "timeRequired": 15,
+        "addToList": "Add to list",
+        "img": "https://i.ibb.co/PYbkXwJ/Leg-press.jpg"
+      }
+]
