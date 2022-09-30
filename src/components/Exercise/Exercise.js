@@ -4,6 +4,7 @@ import './Exercise.css';
 const Exercise = ({handleAddToList, exercise}) => {
     
     const { activityName, description, forAge, timeRequired, img } = exercise;
+    console.log(exercise);
 
     return (
         <div className='exercise'>

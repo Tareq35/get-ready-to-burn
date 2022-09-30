@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './List.css';
 import profile from "../../images/profile.jpg"
 
 const List = (props) => {
     const { list } = props;
+
+    const [breakTime, setBreakTime] = useState("")
 
     let total = 0;
     for (const exercise of list) {
@@ -39,16 +41,20 @@ const List = (props) => {
 
             <div>
                 <h4>Add A Break</h4>
-                <button className='break-btn'><p>2 min</p></button>
-                <button className='break-btn'><p>5 min</p></button>
-                <button className='break-btn'><p>8 min</p></button>
-                <button className='break-btn'><p>10 min</p></button>
-                <button className='break-btn'><p>15 min</p></button>
+                <button onClick={() => setBreakTime("2 min")} className='break-btn'><p>2 min</p></button>
+
+                <button onClick={() => setBreakTime("5 min")} className='break-btn'><p>5 min</p></button>
+
+                <button onClick={() => setBreakTime("8 min")} className='break-btn'><p>8 min</p></button>
+
+                <button onClick={() => setBreakTime("10 min")} className='break-btn'><p>10 min</p></button>
+
+                <button onClick={() => setBreakTime("15 min")} className='break-btn'><p>15 min</p></button>
 
             </div>
             <h4>Exercise Details</h4>
             <p>Exercise time: {total} min</p>
-            <p>Break time: </p>
+            <p>Break time: {breakTime}</p>
             <button className='btn-activity'><p>Activity Completed</p></button>
         </div>
     );
