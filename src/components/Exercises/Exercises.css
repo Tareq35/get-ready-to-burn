@@ -24,3 +24,32 @@
     margin-top: 80px;
     text-align: center;
 }
+.answer-container{
+    display: flex;
+    justify-content: center;
+   
+}
+.answers{
+    width: 60%;
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .exercise-section{
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+    .exercise-data{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .todays-exercise{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        
+    }
+}

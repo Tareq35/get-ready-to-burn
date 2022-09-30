@@ -10,3 +10,10 @@
 .title{
     color: rgb(48, 170, 219);
 }
+@media screen and (max-width: 600px) {
+    .header{
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
