@@ -1,10 +1,20 @@
+.exercise-section{
+    margin-left: 140px;
+}
+
 .exercise-data{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    gap: 30px;
 }
 
 .todays-exercise{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+}
+.profile{
+    border: 1px solid #e2e6e7;
+    padding-left: 10px;
+    border-radius: 8px;
 }
