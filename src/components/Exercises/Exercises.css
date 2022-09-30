@@ -1,55 +1,61 @@
-.exercise-section{
+.exercise-section {
     margin-left: 140px;
 }
 
-.exercise-data{
+.exercise-data {
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 30px;
 }
 
-.todays-exercise{
+.todays-exercise {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-.profile{
+
+.profile {
     border: 1px solid #e2e6e7;
     padding-left: 10px;
     padding-top: 10px;
     border-radius: 8px;
     background-color: wheat;
 }
-.questions{
+
+.questions {
     margin-top: 80px;
     text-align: center;
 }
-.answer-container{
+
+.answer-container {
     display: flex;
     justify-content: center;
-   
+
 }
-.answers{
+
+.answers {
     width: 60%;
-    
+
 }
 
 @media screen and (max-width: 600px) {
 
-    .exercise-section{
+    .exercise-section {
         margin-left: 5px;
         margin-right: 5px;
-        
+
     }
-    .exercise-data{
+
+    .exercise-data {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
     }
-    .todays-exercise{
+
+    .todays-exercise {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: auto;
-        
+
     }
 }

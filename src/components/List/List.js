@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import './List.css';
 import profile from "../../images/profile.jpg"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const List = (props) => {
     const { list } = props;
+
 
     const [breakTime, setBreakTime] = useState(localStorage.getItem("break-time"))
 
@@ -12,10 +15,16 @@ const List = (props) => {
         total = total + exercise.timeRequired;
     }
 
+    //toast notification here 
+
+    const notify = () => toast.success('Congratulation! you are done with your activity');
+
     const handleBreakTime = (value) => {
         setBreakTime(value)
         localStorage.setItem('break-time', value)
+
     }
+
 
     return (
         <div className='list'>
@@ -60,7 +69,11 @@ const List = (props) => {
             <h4>Exercise Details</h4>
             <p>Exercise time: {total} min</p>
             <p>Break time: {breakTime}</p>
-            <button className='btn-activity'><p>Activity Completed</p></button>
+
+            <button onClick={notify} className='btn-activity'><p>Activity Completed</p></button>
+            <ToastContainer
+
+            />
         </div>
     );
 };
