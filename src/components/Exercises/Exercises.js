@@ -1,27 +1,38 @@
 import React, { useEffect, useState } from 'react';
+import Exercise from '../Exercise/Exercise';
 import './Exercises.css';
 
 const Exercises = () => {
 
-    const [exercise, setExercise] = useState([]);
+    const [exerciseItem, setExerciseItem] = useState([]);
 
     useEffect(() => {
 
-        fetch('https://raw.githubusercontent.com/Programming-Hero-Web-Course4/b6-ultra-active-club-Tareq35/main/public/excercise.json?token=GHSAT0AAAAAABV6ZG5DR6LIACH2PNBI47M2YZWAOUQ')
+        fetch('exercise.json')
+
             .then(res => res.json())
-            .then(data => setExercise(data))
+            .then(data => setExerciseItem(data))
     }, [])
 
     return (
-        <div className='exercise-data'>
-            <div className='todays-exercise'>
-                <h2>Select Today's Exercise:{exercise.length} </h2>
+        <div>
+            <h2>Select Today's Exercise </h2>
+            <div className='exercise-data'>
+                <div className='todays-exercise'>
+                    {
+                        exerciseItem.map(exercise => <Exercise
+                            key={exercise.id}
+                            exercise={exercise}
+                        ></Exercise>)
+                    }
 
-            </div>
-            <div className='profile'>
-                <h2>profile</h2>
+                </div>
+                <div className='profile'>
+
+                </div>
             </div>
         </div>
+
     );
 };
 
