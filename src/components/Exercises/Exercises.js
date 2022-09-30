@@ -15,7 +15,7 @@ const Exercises = () => {
     }, [])
 
     const handleAddToList= (exercise) => {
-        console.log(exercise)
+        // console.log(exercise)
         const newList = [...list, exercise];
         setList(newList);
     }
