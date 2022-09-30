@@ -16,6 +16,7 @@
 .profile{
     border: 1px solid #e2e6e7;
     padding-left: 10px;
+    padding-top: 10px;
     border-radius: 8px;
     background-color: wheat;
 }

@@ -1,3 +1,45 @@
+.profile-content{
+    display: flex;
+    align-items: center;
+}
+.profile-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+.person-data-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #d6d296;
+    border-radius: 8px;
+}
+
+.person-data{
+    font-size: 25px;
+}
+.unit{
+    margin-top: 0;
+}
+.profile-content h4{
+    margin: 0;
+}
+.profile-content p{
+    margin: 0;
+}
+.break-btn{
+    background-color: rgb(48, 170, 219);
+    border: none;
+    border-radius: 10px;
+    color: antiquewhite;
+    font-size: medium;
+    margin-left: 8px;
+}
+.break-btn:Hover {
+    background-color: darkgoldenrod;
+    color: white;
+    cursor: pointer;
+}
 .btn-activity{
     width: 100%;
     background-color: rgb(48, 170, 219);
