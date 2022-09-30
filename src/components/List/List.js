@@ -5,11 +5,16 @@ import profile from "../../images/profile.jpg"
 const List = (props) => {
     const { list } = props;
 
-    const [breakTime, setBreakTime] = useState("")
+    const [breakTime, setBreakTime] = useState(localStorage.getItem("break-time"))
 
     let total = 0;
     for (const exercise of list) {
         total = total + exercise.timeRequired;
+    }
+
+    const handleBreakTime = (value) => {
+        setBreakTime(value)
+        localStorage.setItem('break-time', value)
     }
 
     return (
@@ -41,15 +46,15 @@ const List = (props) => {
 
             <div>
                 <h4>Add A Break</h4>
-                <button onClick={() => setBreakTime("2 min")} className='break-btn'><p>2 min</p></button>
+                <button onClick={() => handleBreakTime("2 min")} className='break-btn'><p>2 min</p></button>
 
-                <button onClick={() => setBreakTime("5 min")} className='break-btn'><p>5 min</p></button>
+                <button onClick={() => handleBreakTime("5 min")} className='break-btn'><p>5 min</p></button>
 
-                <button onClick={() => setBreakTime("8 min")} className='break-btn'><p>8 min</p></button>
+                <button onClick={() => handleBreakTime("8 min")} className='break-btn'><p>8 min</p></button>
 
-                <button onClick={() => setBreakTime("10 min")} className='break-btn'><p>10 min</p></button>
+                <button onClick={() => handleBreakTime("10 min")} className='break-btn'><p>10 min</p></button>
 
-                <button onClick={() => setBreakTime("15 min")} className='break-btn'><p>15 min</p></button>
+                <button onClick={() => handleBreakTime("15 min")} className='break-btn'><p>15 min</p></button>
 
             </div>
             <h4>Exercise Details</h4>
