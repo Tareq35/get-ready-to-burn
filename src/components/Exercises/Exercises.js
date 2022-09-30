@@ -7,12 +7,14 @@ const Exercises = () => {
     const [exerciseItem, setExerciseItem] = useState([]);
 
     useEffect(() => {
-
         fetch('exercise.json')
-
-            .then(res => res.json())
-            .then(data => setExerciseItem(data))
+        .then(res => res.json())
+        .then(data => setExerciseItem(data))
     }, [])
+
+    const handleAddToList= (exercise) => {
+        console.log(exercise)
+    }
 
     return (
         <div>
@@ -23,6 +25,7 @@ const Exercises = () => {
                         exerciseItem.map(exercise => <Exercise
                             key={exercise.id}
                             exercise={exercise}
+                            handleAddToList={handleAddToList}
                         ></Exercise>)
                     }
 
