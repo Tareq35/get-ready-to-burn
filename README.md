@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site here [Get Ready To Burn](https://assignment-8-get-ready-to-burn.netlify.app/).
 
 ## Available Scripts
 
